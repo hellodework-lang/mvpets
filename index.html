@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Most Valuable Pets — Honest Picks for Every Pet</title>
+  <meta name="description" content="Real testing, honest scores, no fluff. We help you pick the best food, gear, and toys your pet will actually love.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav wrap">
+      <div class="logo" id="site-logo">MVP <span>🐾</span></div>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#picks">Best Picks</a>
+        <a href="#blog">Blog</a>
+        <a href="#deals">Deals</a>
+        <a href="#quiz-trigger">Find Your Match</a>
+      </nav>
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <a href="#picks" class="nav-cta">See Today's Picks</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="eyebrow">Trusted by 40,000+ pet parents</div>
+        <h1>Find your pet's<br><em>best match.</em></h1>
+        <p>Real testing, honest scores, no fluff. We help you pick the food, gear, and toys your pet will actually love.</p>
+        <div class="btn-row">
+          <a href="#picks" class="btn btn-primary">Browse Best Picks →</a>
+          <a href="#blog" class="btn btn-ghost">Read the Blog</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="blob blob-1">
+          <img src="https://images.unsplash.com/photo-1517849845537-4d257902861a?w=500&q=80" alt="Happy dog wearing a yellow collar smiling at the camera">
+        </div>
+        <div class="blob blob-2">
+          <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d?w=300&q=80" alt="Beautiful orange tabby cat looking directly forward">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST STRIP -->
+  <div class="strip">
+    <div class="wrap strip-grid">
+      <div class="strip-item"><div class="num" id="stat-products">120+</div><div class="lbl">Products Tested</div></div>
+      <div class="strip-item"><div class="num" id="stat-readers">40k</div><div class="lbl">Happy Readers</div></div>
+      <div class="strip-item"><div class="num" id="stat-rating">4.8</div><div class="lbl">Avg. Reader Rating</div></div>
+      <div class="strip-item"><div class="num" id="stat-frequency">Weekly</div><div class="lbl">Fresh Picks</div></div>
+    </div>
+  </div>
+
+  <!-- EDITOR'S PICKS -->
+  <section class="section" id="picks">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Editor's Picks</div>
+        <h2>This week's top match</h2>
+        <p>Ranked on comfort, durability, value, and real owner feedback.</p>
+        
+        <!-- Interactive Category Filters -->
+        <div class="filter-bar">
+          <button class="filter-btn active" data-category="all">All Picks</button>
+          <button class="filter-btn" data-category="dog">Dogs</button>
+          <button class="filter-btn" data-category="cat">Cats</button>
+        </div>
+      </div>
+      <div class="picks" id="picks-grid">
+        <!-- Pick Card 1 -->
+        <div class="pick-card" data-id="bed" data-category="dog">
+          <div class="pick-media">
+            <svg viewBox="0 0 100 100" class="pick-svg">
+              <rect x="15" y="45" width="70" height="25" rx="8" fill="var(--coral)" opacity="0.8"/>
+              <ellipse cx="50" cy="52" rx="28" ry="12" fill="var(--peach)"/>
+              <path d="M35,32 C40,20 60,20 65,32 C70,42 30,42 35,32 Z" fill="var(--ink-soft)" opacity="0.2"/>
+              <!-- Paw print icon -->
+              <circle cx="50" cy="48" r="4" fill="var(--ink)"/>
+              <circle cx="43" cy="42" r="2.5" fill="var(--ink)"/>
+              <circle cx="57" cy="42" r="2.5" fill="var(--ink)"/>
+              <circle cx="40" cy="48" r="2.2" fill="var(--ink)"/>
+              <circle cx="60" cy="48" r="2.2" fill="var(--ink)"/>
+            </svg>
+          </div>
+          <div class="pick-title">Orthopedic Memory Foam Bed</div>
+          <div class="pick-sub">Best for senior dogs & joint support</div>
+          <div class="pick-rating">★ 9.4 / 10</div>
+          <button class="pick-cta view-details-btn" data-product="bed">View Detailed Review →</button>
+        </div>
+        <!-- Pick Card 2 -->
+        <div class="pick-card" data-id="feeder" data-category="cat">
+          <div class="pick-media">
+            <svg viewBox="0 0 100 100" class="pick-svg">
+              <rect x="35" y="20" width="30" height="50" rx="6" fill="var(--sage)" opacity="0.8"/>
+              <circle cx="50" cy="35" r="8" fill="var(--peach)"/>
+              <rect x="30" y="65" width="40" height="12" rx="4" fill="var(--ink-soft)"/>
+              <ellipse cx="50" cy="70" rx="14" ry="5" fill="var(--cream)"/>
+              <!-- Small kibble dots -->
+              <circle cx="48" cy="69" r="1.5" fill="var(--coral)"/>
+              <circle cx="52" cy="71" r="1.5" fill="var(--coral)"/>
+              <circle cx="45" cy="70" r="1.2" fill="var(--ink)"/>
+              <circle cx="55" cy="70" r="1.2" fill="var(--ink)"/>
+            </svg>
+          </div>
+          <div class="pick-title">Automatic Cat Feeder</div>
+          <div class="pick-sub">Best for multi-pet households</div>
+          <div class="pick-rating">★ 9.1 / 10</div>
+          <button class="pick-cta view-details-btn" data-product="feeder">View Detailed Review →</button>
+        </div>
+        <!-- Pick Card 3 -->
+        <div class="pick-card" data-id="harness" data-category="dog">
+          <div class="pick-media">
+            <svg viewBox="0 0 100 100" class="pick-svg">
+              <!-- Harness straps layout -->
+              <circle cx="50" cy="50" r="28" fill="none" stroke="var(--coral)" stroke-width="6" opacity="0.6"/>
+              <path d="M50,15 L50,85 M15,50 L85,50" stroke="var(--ink)" stroke-width="4" stroke-linecap="round"/>
+              <rect x="42" y="35" width="16" height="30" rx="3" fill="var(--peach)"/>
+              <circle cx="50" cy="50" r="5" fill="var(--ink)"/>
+            </svg>
+          </div>
+          <div class="pick-title">No-Pull Front-Clip Harness</div>
+          <div class="pick-sub">Best for leash training</div>
+          <div class="pick-rating">★ 8.9 / 10</div>
+          <button class="pick-cta view-details-btn" data-product="harness">View Detailed Review →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEALS TICKER -->
+  <div class="ticker-wrap" id="deals">
+    <div class="ticker" id="ticker-container" aria-label="Interactive promotions ticker. Hover to pause, click to get coupon code.">
+      <div class="ticker-item" data-code="CATWAND24"><b>24% OFF</b> Interactive Cat Wand Set — click for code</div>
+      <div class="ticker-item" data-code="SLOWFEED5"><b>NEW PICK</b> Slow-Feed Bowl climbs to #5 this week — click for code</div>
+      <div class="ticker-item" data-code="TRAVEL18"><b>18% OFF</b> Waterproof Travel Dog Bed — click for code</div>
+      <div class="ticker-item" data-code="TREATSRE"><b>RESTOCK</b> Freeze-Dried Training Treats back in stock — click for code</div>
+      <!-- Duplicate for infinite seamless scroll -->
+      <div class="ticker-item" data-code="CATWAND24"><b>24% OFF</b> Interactive Cat Wand Set — click for code</div>
+      <div class="ticker-item" data-code="SLOWFEED5"><b>NEW PICK</b> Slow-Feed Bowl climbs to #5 this week — click for code</div>
+      <div class="ticker-item" data-code="TRAVEL18"><b>18% OFF</b> Waterproof Travel Dog Bed — click for code</div>
+      <div class="ticker-item" data-code="TREATSRE"><b>RESTOCK</b> Freeze-Dried Training Treats back in stock — click for code</div>
+    </div>
+  </div>
+
+  <!-- BLOG SECTION -->
+  <section class="section" id="blog">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">From the Blog</div>
+        <h2>Guides worth reading</h2>
+        <p>Written for owners, not algorithms — practical advice you can use today.</p>
+      </div>
+
+      <div class="blog-grid">
+        <div class="blog-card featured" data-blog-id="dog-bed-size">
+          <div class="blog-media">
+            <span class="blog-tag">Buying Guide</span>
+            <img class="blog-img" src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Two cute dogs playing happily outdoors">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Dog Care · 6 min read</div>
+            <h3 class="blog-title">How to pick the right dog bed for your breed's size</h3>
+            <p class="blog-excerpt">Size, sleep position, and joint health all matter more than looks. Here's a simple framework before you buy — plus three picks by budget.</p>
+            <button class="blog-read-btn">Read the guide →</button>
+          </div>
+        </div>
+        <div class="blog-card" data-blog-id="feeders-compared">
+          <div class="blog-media">
+            <span class="blog-tag">Comparison</span>
+            <img class="blog-img" src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?w=400&q=80" alt="Fluffy kitten waiting for food">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Cat Care · 4 min read</div>
+            <h3 class="blog-title">Automatic vs. gravity feeders: which one wins?</h3>
+            <p class="blog-excerpt">We break down cost, mess, and portion control side by side.</p>
+            <button class="blog-read-btn">Read more →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog-row">
+        <div class="blog-card" data-blog-id="monsoon-grooming">
+          <div class="blog-media">
+            <span class="blog-tag">Care Tips</span>
+            <img class="blog-img" src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=400&q=80" alt="Dog enjoying a fresh bath and grooming session">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Seasonal · 3 min read</div>
+            <h3 class="blog-title">Monsoon grooming checklist for dogs and cats</h3>
+            <p class="blog-excerpt">Keep paws, coats, and ears healthy through the wet months.</p>
+            <button class="blog-read-btn">Read more →</button>
+          </div>
+        </div>
+        <div class="blog-card" data-blog-id="harness-review">
+          <div class="blog-media">
+            <span class="blog-tag">Product Review</span>
+            <img class="blog-img" src="https://images.unsplash.com/photo-1534361960057-19889db9621e?w=400&q=80" alt="Happy golden retriever on a walk with a harness">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">Reviews · 5 min read</div>
+            <h3 class="blog-title">We tried 6 no-pull harnesses. One stood out.</h3>
+            <p class="blog-excerpt">Fit, comfort, and how each held up on daily walks.</p>
+            <button class="blog-read-btn">Read more →</button>
+          </div>
+        </div>
+        <div class="blog-card" data-blog-id="puppy-first-30-days">
+          <div class="blog-media">
+            <span class="blog-tag">Beginner Guide</span>
+            <img class="blog-img" src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?w=400&q=80" alt="Very cute newborn golden retriever puppy sleeping">
+          </div>
+          <div class="blog-body">
+            <div class="blog-meta">New Pet Parents · 7 min read</div>
+            <h3 class="blog-title">First 30 days with a new puppy: a simple checklist</h3>
+            <p class="blog-excerpt">Everything to buy, do, and expect in the first month.</p>
+            <button class="blog-read-btn">Read more →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ CALL TO ACTION -->
+  <section class="section" id="quiz-trigger" style="padding-top:0;">
+    <div class="wrap">
+      <div class="quiz-cta-banner">
+        <div>
+          <div class="eyebrow">60-second finder</div>
+          <h3>Not sure which product fits your pet?</h3>
+          <p>Answer a few questions about your pet's size, age, and habits — we'll match you to your best pick.</p>
+        </div>
+        <button id="start-quiz-btn" class="btn btn-primary">Start the Quiz →</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <div class="foot-grid">
+        <div class="logo" style="font-size:24px;">MVP <span>🐾</span></div>
+        <div class="foot-links">
+          <a href="#picks">Best Picks</a>
+          <a href="#blog">Blog</a>
+          <a href="#deals">Deals</a>
+          <a href="#site-logo">About</a>
+          <a href="#site-logo">Contact</a>
+        </div>
+      </div>
+      <div class="disclosure">
+        Affiliate Disclosure: Most Valuable Pets is a participant in the Amazon Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by linking to Amazon.com. As an Amazon Associate, we earn from qualifying purchases — at no extra cost to you. © 2026 Most Valuable Pets.
+      </div>
+    </div>
+  </footer>
+
+  <!-- NATIVE DIALOG: QUIZ MODAL -->
+  <dialog id="quiz-dialog" aria-modal="true">
+    <div class="dialog-header">
+      <h3 class="dialog-title">Find Your Pet's Best Match</h3>
+      <button class="close-dialog-btn" aria-label="Close Quiz">&times;</button>
+    </div>
+    <div class="dialog-body">
+      <!-- Quiz Progress Tracker -->
+      <div class="quiz-progress-container">
+        <div class="quiz-progress-bar" id="quiz-progress" style="width: 33%"></div>
+      </div>
+
+      <form id="quiz-form">
+        <!-- Step 1: Pet Type -->
+        <div class="quiz-step active" data-step="1">
+          <p class="quiz-question">What kind of companion do you have?</p>
+          <div class="quiz-options">
+            <label class="quiz-option-card">
+              <input type="radio" name="petType" value="dog" required>
+              <div class="card-face">
+                <span class="option-emoji">🐶</span>
+                <span class="option-title">Dog</span>
+                <span class="option-desc">Canine buddy</span>
+              </div>
+            </label>
+            <label class="quiz-option-card">
+              <input type="radio" name="petType" value="cat">
+              <div class="card-face">
+                <span class="option-emoji">🐱</span>
+                <span class="option-title">Cat</span>
+                <span class="option-desc">Feline friend</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 2: Main Goal / Concern -->
+        <div class="quiz-step" data-step="2">
+          <p class="quiz-question">What is your primary goal or concern?</p>
+          <div class="quiz-options">
+            <label class="quiz-option-card">
+              <input type="radio" name="goal" value="sleep" required>
+              <div class="card-face">
+                <span class="option-emoji">💤</span>
+                <span class="option-title">Comfort / Joints</span>
+                <span class="option-desc">Better sleep & support</span>
+              </div>
+            </label>
+            <label class="quiz-option-card">
+              <input type="radio" name="goal" value="food">
+              <div class="card-face">
+                <span class="option-emoji">🥣</span>
+                <span class="option-title">Feeding Habits</span>
+                <span class="option-desc">Portion or speed control</span>
+              </div>
+            </label>
+            <label class="quiz-option-card">
+              <input type="radio" name="goal" value="gear">
+              <div class="card-face">
+                <span class="option-emoji">🦮</span>
+                <span class="option-title">Daily Walks / Gear</span>
+                <span class="option-desc">Better control & training</span>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Step 3: Age Category -->
+        <div class="quiz-step" data-step="3">
+          <p class="quiz-question">How old is your pet?</p>
+          <div class="quiz-options">
+            <label class="quiz-option-card">
+              <input type="radio" name="age" value="young" required>
+              <div class="card-face">
+                <span class="option-emoji">🍼</span>
+                <span class="option-title">Young</span>
+                <span class="option-desc">Puppy / Kitten</span>
+              </div>
+            </label>
+            <label class="quiz-option-card">
+              <input type="radio" name="age" value="adult">
+              <div class="card-face">
+                <span class="option-emoji">🐕</span>
+                <span class="option-title">Adult</span>
+                <span class="option-desc">Fully grown</span>
+              </div>
+            </label>
+            <label class="quiz-option-card">
+              <input type="radio" name="age" value="senior">
+              <div class="card-face">
+                <span class="option-emoji">👵</span>
+                <span class="option-title">Senior</span>
+                <span class="option-desc">Wise elder pet</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </form>
+
+      <!-- Quiz Recommendation Result (Hidden by default) -->
+      <div id="quiz-result" class="quiz-result-container hidden">
+        <div class="recommendation-badge">Your Top Match</div>
+        <h4 id="result-title" class="result-title">Orthopedic Memory Foam Bed</h4>
+        <p id="result-text" class="result-text">Based on your senior dog's comfort needs, we highly recommend this orthopedic bed designed for joint support.</p>
+        <div id="result-card-container"></div>
+        <button id="restart-quiz-btn-modal" class="btn btn-ghost" style="margin-top: 15px;">Take Quiz Again</button>
+      </div>
+    </div>
+    <div class="dialog-footer">
+      <button type="button" id="prev-step-btn" class="btn btn-ghost hidden">← Back</button>
+      <button type="button" id="next-step-btn" class="btn btn-primary">Next Step →</button>
+    </div>
+  </dialog>
+
+  <!-- NATIVE DIALOG: PRODUCT DETAILS MODAL -->
+  <dialog id="product-dialog" aria-modal="true">
+    <div class="dialog-header">
+      <h3 class="dialog-title" id="p-modal-title">Product Review Details</h3>
+      <button class="close-dialog-btn" aria-label="Close Product Review">&times;</button>
+    </div>
+    <div class="dialog-body" id="p-modal-body">
+      <!-- Dynamic content injected by app.js -->
+    </div>
+    <div class="dialog-footer">
+      <a href="#" target="_blank" id="p-modal-amazon-link" class="btn btn-primary">View Price on Amazon →</a>
+      <button class="btn btn-ghost close-modal-action-btn">Close Review</button>
+    </div>
+  </dialog>
+
+  <!-- NATIVE DIALOG: BLOG POST MODAL -->
+  <dialog id="blog-dialog" aria-modal="true">
+    <div class="dialog-header">
+      <h3 class="dialog-title" id="b-modal-title">Blog Article</h3>
+      <button class="close-dialog-btn" aria-label="Close Article">&times;</button>
+    </div>
+    <div class="dialog-body" id="b-modal-body">
+      <!-- Dynamic content injected by app.js -->
+    </div>
+    <div class="dialog-footer">
+      <button class="btn btn-ghost close-modal-action-btn">Done Reading</button>
+    </div>
+  </dialog>
+
+  <!-- DYNAMIC TOAST NOTIFICATION FOR DEAL CODES -->
+  <div id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-emoji">🎉</span>
+    <div class="toast-content">
+      <span class="toast-message">Promo code copied to clipboard!</span>
+      <strong id="toast-code" class="toast-code">PROMO20</strong>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
