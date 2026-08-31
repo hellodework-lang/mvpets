@@ -1080,11 +1080,13 @@ dialog[open] {
 
 /* ===== BLOG MODAL INTERNALS ===== */
 .blog-modal-header-img {
+  display: block;
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  max-height: 450px;
+  height: auto;
+  object-fit: contain;
   border-radius: var(--radius-lg);
-  margin-bottom: 20px;
+  margin: 0 auto 20px auto;
 }
 .blog-modal-body-text {
   font-size: 15px;

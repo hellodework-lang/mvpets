@@ -63,17 +63,23 @@ const BLOG_ARTICLES = {
       <p><b>Step 1: Measure your dog while sleeping.</b> Measure from the tip of the nose to the tail bone, then add 6-12 inches to find the correct bed width.</p>
       <p><b>Step 2: Know their style.</b> Sprawlers need flat mattress-style orthopedic beds. Curlers prefer round bolster beds where they can tuck their nose in. Leaners look for beds with built-in pillow bumpers.</p>
       <p><b>Step 3: Materials matter.</b> Senior dogs require true memory foam rather than polyfill, which sags and leaves pressure points resting directly against the cold floor.</p>
+      <p><b>Step 4: Keep it clean for their health.</b> A dog bed collects dirt, drool, dander, and shed fur fast — and if it's not cleaned regularly, it can trigger skin allergies, irritation, or even fungal infections, especially for dogs with sensitive skin. Choose a bed with a removable, machine-washable cover so it can go straight into the wash without hassle. Wash the cover every 1-2 weeks in hot water to kill dust mites and bacteria, and let it fully air dry before putting it back on to avoid trapped moisture and odor. Vacuum the inner cushion or foam base weekly to lift out fur and dander that build up between washes. For memory foam beds specifically, avoid soaking the foam itself — spot clean with a mild, pet-safe detergent instead, since foam holds moisture and can develop mold if fully submerged.</p>
+      <p>A clean bed isn't just about smell — it directly affects your dog's skin health and how well they actually rest on it.</p>
     `
   },
   "feeders-compared": {
-    title: "Automatic vs. gravity feeders: which one wins?",
-    tag: "Comparison",
-    meta: "Cat Care · 4 min read",
-    imgUrl: "https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?w=400&q=80",
+    title: "Senior Dog Nutrition: What Changes After Age 7 (And What to Feed Them)",
+    tag: "Nutrition",
+    meta: "Dog Care · 6 min read",
+    imgUrl: "senior_dog.jpg?v=10",
     content: `
-      <p>If you're balancing a busy work schedule with a pet's feeding schedule, choice of dispenser is critical. We compared gravity feeders (which refill automatically as the bowl empties) with automatic programmable dispensers.</p>
-      <p><b>Gravity Feeders:</b> Best for budget-conscious owners and cats that self-regulate well. However, they invite overeating, which often leads to feline obesity and makes weight tracking impossible.</p>
-      <p><b>Automatic Feeders:</b> Allow exact scheduling, portion control, and prevent breakfast wake-up calls. The higher entry cost pays off in overall health and peace of mind.</p>
+      <p>As your dog crosses into their senior years, their body starts needing a different kind of care — slower metabolism, joint stiffness, and digestion all shift with age. A few intentional changes to their food and routine can make a real difference in how comfortable and active they stay.</p>
+      <p><b>How to care for a senior dog.</b> Keep an eye out for slower movement, weight changes, dental issues, or a duller coat — these are early signs their needs are shifting. Stick to a consistent daily routine, keep exercise gentle but regular to protect joints without overexerting them, and schedule vet checkups more often than you would for a younger dog, since issues are easier to catch early.</p>
+      <p><b>What food to follow.</b> Look for high-quality protein like chicken, fish, or eggs to help preserve muscle mass, since senior dogs actually need more protein, not less. The food should also include Omega-3 fatty acids for joint and brain health, added fiber and probiotics for easier digestion, and antioxidants like Vitamins E and C to fight age-related wear. Grain-free, natural formulas without fillers or artificial additives are usually gentler on an aging digestive system.</p>
+      <p><b>What products to choose.</b> When picking a senior food or supplement, check that it lists a real protein source as the first ingredient, includes glucosamine and chondroitin for joint support, and carries AAFCO certification as a baseline for nutritional quality. Beyond food, consider a good joint supplement or fish oil if your dog's diet doesn't already include enough Omega-3s — but always pick products meant specifically for senior dogs rather than general all-life-stage formulas.</p>
+      <p><b>How to maintain their weight.</b> Senior dogs burn fewer calories since they're naturally less active, so it's easy for weight to creep up even without a change in how much they eat. Feed measured portions instead of eyeballing it, and switch to smaller, more frequent meals if your dog seems hungry between feedings. Cut back on treats or swap to low-calorie options, since extra pounds put direct strain on aging joints. Weigh your dog every few weeks or check their body condition by feeling for their ribs — you should be able to feel them easily without pressing hard, but not see them. If their weight shifts noticeably in either direction, it's worth flagging to your vet rather than adjusting food on your own.</p>
+      <p><b>Follow your vet's advice.</b> Every senior dog ages differently, so what works for one may not suit another — especially if there's an existing condition like kidney disease, diabetes, or arthritis. Your vet can recommend the right diet, confirm portion sizes, and guide any supplement choices based on your dog's specific bloodwork and health history. Always check with them before switching foods or adding anything new.</p>
+      <p>Getting these basics right won't undo the years, but it can make your dog's golden ones a lot more comfortable.</p>
     `
   },
   "monsoon-grooming": {
