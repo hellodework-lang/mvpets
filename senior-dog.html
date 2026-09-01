@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senior Dog Care Guide — Most Valuable Pets</title>
+  <meta name="description" content="Explore practical and thoughtful guidance designed around the changing needs of dogs as they move through their later years.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=35">
+  <style>
+    .senior-page-header {
+      padding: 40px 0 24px;
+      border-bottom: 2px solid #C43B1C;
+    }
+    .back-nav-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      color: #111111;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+      text-decoration: underline;
+      transition: color 0.15s ease;
+    }
+    .back-nav-link:hover {
+      color: #C43B1C;
+    }
+    .senior-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      padding: 48px 0;
+      border-bottom: 2px solid #C43B1C;
+    }
+    .senior-hero-photo-wrap {
+      border: 2px solid #C43B1C;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
+      background-color: #EAEAEA;
+      overflow: hidden;
+    }
+    .senior-hero-img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      display: block;
+      filter: none;
+    }
+    .senior-hero-content h1 {
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 1.08;
+      margin: 14px 0 18px;
+      color: #111111;
+    }
+    .senior-hero-desc {
+      font-size: 17px;
+      color: #333333;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
+    .senior-sections-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin: 48px 0 72px;
+    }
+    .senior-section-card {
+      background-color: #FFFFFF;
+      border: 1.5px solid #C43B1C;
+      padding: 28px 24px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 4px 4px 0px rgba(196, 59, 28, 0.12);
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .senior-section-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.2);
+    }
+    .senior-card-num {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      color: #C43B1C;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .senior-card-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 22px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #111111;
+      margin-bottom: 12px;
+    }
+    .senior-card-desc {
+      font-size: 13.5px;
+      color: #444444;
+      line-height: 1.55;
+      margin-bottom: 24px;
+      flex-grow: 1;
+    }
+    .senior-card-btn {
+      margin-top: auto;
+      align-self: flex-start;
+    }
+    @media (max-width: 992px) {
+      .senior-hero-grid { grid-template-columns: 1fr; }
+      .senior-sections-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .senior-sections-grid { grid-template-columns: 1fr; }
+      .senior-hero-content h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body class="newspaper-body">
+
+  <!-- 1. HEADER & NEWSPAPER MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <a href="index.html" class="brand-logo" aria-label="Most Valuable Pets Homepage">
+        <img src="logo.png?v=35" alt="Most Valuable Pets" class="brand-img">
+      </a>
+      <nav class="masthead-nav" aria-label="Main Navigation">
+        <a href="index.html#picks" class="nav-link">BEST PICKS</a>
+        <a href="index.html#dogs" class="nav-link">DOGS</a>
+        <a href="index.html#cats" class="nav-link">CATS</a>
+        <a href="index.html#guides" class="nav-link active">GUIDES</a>
+        <a href="index.html#how-we-review" class="nav-link">ABOUT US</a>
+      </nav>
+      <div class="masthead-actions">
+        <a href="index.html" class="btn btn-secondary" style="padding: 9px 18px; font-size: 11px;">&larr; BACK TO JOURNAL</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Newspaper Info Strip -->
+  <div class="newspaper-info-strip">
+    <div class="info-strip-inner">
+      <span class="strip-bold">EDITORIAL SPECIAL FEATURE</span>
+      <span class="strip-sep">|</span>
+      <span>SENIOR DOG CARE & WELLNESS ARCHIVE</span>
+      <span class="strip-sep">|</span>
+      <span class="strip-muted">VET-REVIEWED PUBLICATION</span>
+    </div>
+  </div>
+
+  <main class="page-container">
+
+    <!-- Screen 1: Hero Section -->
+    <section class="senior-hero-grid">
+      <div class="senior-hero-content">
+        <span class="editorial-label">04. OLD AGE DOG / SENIOR DOG</span>
+        <h1>SENIOR DOG</h1>
+        <p class="senior-hero-desc">
+          Thoughtful guidance for adapting care, routines, nutrition, comfort, and everyday life as your dog grows older.
+        </p>
+        <a href="#care-guide-sections" class="btn btn-primary" style="font-size: 14px; padding: 14px 32px;">
+          READ MORE &rarr;
+        </a>
+      </div>
+      <div class="senior-hero-photo-wrap">
+        <img src="senior_dog.jpg" alt="Calm senior dog resting comfortably in a warm, natural home setting" class="senior-hero-img">
+      </div>
+    </section>
+
+    <!-- Screen 2: Senior Dog Care Guide Sections -->
+    <section id="care-guide-sections" style="padding-top: 54px;">
+      <div class="section-header-rule">
+        <h2 class="section-title">SENIOR DOG CARE GUIDE</h2>
+        <span class="section-subtitle">COMPREHENSIVE GERIATRIC CANINE CARE &bull; 6 CORE PILLARS</span>
+      </div>
+      
+      <p style="font-size: 16px; color: #333333; line-height: 1.6; max-width: 860px; margin-bottom: 24px;">
+        Explore practical and thoughtful guidance designed around the changing needs of dogs as they move through their later years.
+      </p>
+
+      <div class="senior-sections-grid">
+        
+        <!-- Pillar 01: Health -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">01 &mdash; HEALTH</div>
+          <h3 class="senior-card-title">Understanding the Changes</h3>
+          <p class="senior-card-desc">
+            Learn what changes to observe as your dog ages and how to support a consistent, comfortable routine.
+          </p>
+          <a href="index.html#how-we-review" class="btn btn-secondary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+        <!-- Pillar 02: Care & Grooming -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">02 &mdash; CARE & GROOMING</div>
+          <h3 class="senior-card-title">Gentler Care for Older Dogs</h3>
+          <p class="senior-card-desc">
+            Adapt grooming, hygiene, and handling routines to make everyday care more comfortable.
+          </p>
+          <a href="index.html#how-we-review" class="btn btn-secondary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+        <!-- Pillar 03: Nutrition -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">03 &mdash; NUTRITION</div>
+          <h3 class="senior-card-title">Nutrition Through the Years</h3>
+          <p class="senior-card-desc">
+            Explore feeding routines, hydration, treats, and the changing nutritional considerations of senior dogs.
+          </p>
+          <a href="index.html#how-we-review" class="btn btn-secondary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+        <!-- Pillar 04: Training & Behaviour -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">04 &mdash; TRAINING & BEHAVIOUR</div>
+          <h3 class="senior-card-title">Keep Learning Together</h3>
+          <p class="senior-card-desc">
+            Understand behaviour changes and discover gentle ways to maintain engagement and useful habits.
+          </p>
+          <a href="index.html#how-we-review" class="btn btn-secondary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+        <!-- Pillar 05: Lifestyle & Enrichment -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">05 &mdash; LIFESTYLE & ENRICHMENT</div>
+          <h3 class="senior-card-title">Comfort, Movement & Meaningful Days</h3>
+          <p class="senior-card-desc">
+            Discover low-impact enrichment, comfortable routines, mental stimulation, and ways to adapt everyday life.
+          </p>
+          <a href="index.html#how-we-review" class="btn btn-secondary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+        <!-- Pillar 06: Products & Buying Guides -->
+        <article class="senior-section-card">
+          <div class="senior-card-num">06 &mdash; PRODUCTS & BUYING GUIDES</div>
+          <h3 class="senior-card-title">Choose for Comfort</h3>
+          <p class="senior-card-desc">
+            Explore practical products designed around accessibility, comfort, enrichment, and the changing needs of senior dogs.
+          </p>
+          <a href="index.html#picks" class="btn btn-primary senior-card-btn">EXPLORE &rarr;</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="page-container footer-content">
+      <div class="footer-brand-col">
+        <div class="footer-logo">
+          <img src="logo.png?v=35" alt="Most Valuable Pets" class="footer-brand-img">
+        </div>
+        <p class="footer-desc">
+          Most Valuable Pets is an independent product-testing journal dedicated to clear evaluations, veterinary-vetted safety standards, and practical care for dogs and cats.
+        </p>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-heading">GUIDES</h4>
+        <ul class="footer-list">
+          <li><a href="kitten-care.html">Kitten Care</a></li>
+          <li><a href="index.html#picks">Best Dog Picks</a></li>
+          <li><a href="index.html#picks">Best Cat Picks</a></li>
+          <li><a href="index.html#guides">Buying Guides</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-heading">ABOUT</h4>
+        <ul class="footer-list">
+          <li><a href="index.html#how-we-review">About Us</a></li>
+          <li><a href="index.html#how-we-review">How We Review</a></li>
+          <li><a href="index.html#how-we-review">Our Paw Score&trade;</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-heading">HELP</h4>
+        <ul class="footer-list">
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="page-container footer-bottom">
+      <div class="copyright-line">
+        &copy; 2026 Most Valuable Pets. All rights reserved. Registered ISSN 2841-9920.
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
