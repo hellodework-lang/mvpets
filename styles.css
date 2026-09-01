@@ -1397,14 +1397,24 @@ h1, h2, h3, .serif-font {
 }
 
 .vintage-paw-stamp {
-  transform: rotate(-6deg);
-  opacity: 0.9;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: rotateStamp 18s linear infinite;
+  transform-origin: center center;
 }
 
-.vintage-paw-stamp:hover {
-  transform: rotate(0deg) scale(1.05);
-  opacity: 1;
+.vintage-paw-stamp svg {
+  display: block;
+}
+
+@keyframes rotateStamp {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .footer-bottom {
