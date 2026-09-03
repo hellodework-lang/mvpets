@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat & Dog Grooming Guide — Everything You Need to Know | Most Valuable Pets</title>
+  <meta name="description" content="A comprehensive, practical guide to grooming, cleaning, and maintaining your cat or dog — from bathing, brushing, and skin care to dental, ear, and nail hygiene.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=48">
+  <style>
+    /* Hero Section - Screen 1 */
+    .kitten-hero-section {
+      padding: 40px 0 54px;
+      border-bottom: 2px solid #C43B1C;
+    }
+    .kitten-hero-banner {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+      border: 2px solid #C43B1C;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.15);
+      filter: none;
+      margin-bottom: 36px;
+    }
+    .kitten-hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .kitten-hero-title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.05;
+      color: #111111;
+      margin: 12px 0 8px;
+    }
+    .kitten-hero-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-style: italic;
+      color: #C43B1C;
+      margin-bottom: 18px;
+    }
+    .kitten-hero-desc {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333333;
+      margin-bottom: 24px;
+    }
+    .kitten-intro-box {
+      background-color: #dddddd;
+      border: 2px solid #111111;
+      padding: 32px;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
+    }
+    .kitten-intro-box h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #C43B1C;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .kitten-intro-box p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #222222;
+      margin-bottom: 14px;
+    }
+
+    /* Screen 2: Interactive Split-View Explorer */
+    .explorer-section {
+      padding: 64px 0 80px;
+    }
+    .explorer-layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 40px;
+      margin-top: 40px;
+      align-items: start;
+    }
+    
+    /* Left Navigation Sidebar */
+    .explorer-nav-col {
+      position: sticky;
+      top: 24px;
+      background-color: #dddddd;
+      border: 2px solid #C43B1C;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.15);
+      overflow: hidden;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+    .explorer-nav-header {
+      background-color: #111111;
+      color: #dddddd;
+      padding: 16px 20px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .explorer-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .explorer-nav-item {
+      border-bottom: 1px solid #cccccc;
+    }
+    .explorer-nav-item:last-child {
+      border-bottom: none;
+    }
+    .explorer-tab-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 14px 18px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #222222;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
+    }
+    .explorer-tab-btn:hover {
+      background-color: #cccccc;
+      color: #C43B1C;
+      padding-left: 22px;
+    }
+    .explorer-tab-btn.active {
+      background-color: #C43B1C;
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .explorer-tab-btn.active .tab-arrow {
+      color: #ffffff;
+      transform: translateX(4px);
+    }
+    .tab-arrow {
+      font-size: 14px;
+      color: #C43B1C;
+      transition: transform 0.15s ease;
+    }
+
+    /* Right Details Display Panel */
+    .explorer-content-panel {
+      background-color: #dddddd;
+      border: 2px solid #C43B1C;
+      padding: 44px 48px;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
+      min-height: 520px;
+    }
+    .panel-section {
+      display: none;
+    }
+    .panel-section.active {
+      display: block;
+      animation: fadeInPanel 0.2s ease-in-out;
+    }
+    @keyframes fadeInPanel {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .panel-badge {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: #C43B1C;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .panel-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #111111;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .panel-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: #333333;
+      margin-bottom: 24px;
+      border-bottom: 1.5px solid #C43B1C;
+      padding-bottom: 16px;
+    }
+    .panel-body p {
+      font-size: 15.5px;
+      line-height: 1.75;
+      color: #222222;
+      margin-bottom: 18px;
+    }
+    .panel-callout {
+      background-color: #cccccc;
+      border-left: 4px solid #C43B1C;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    .panel-callout h5 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #C43B1C;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .panel-callout p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #222222;
+      margin-bottom: 0 !important;
+    }
+    .panel-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      border: 1.5px solid #111111;
+    }
+    .panel-table th {
+      background-color: #111111;
+      color: #dddddd;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .panel-table td {
+      border: 1px solid #cccccc;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #222222;
+    }
+    .panel-table tr:nth-child(even) {
+      background-color: #e5e5e5;
+    }
+    .panel-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .panel-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #222222;
+    }
+    .panel-list li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #C43B1C;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .panel-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .panel-checklist li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #222222;
+    }
+    .panel-checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 4px;
+      color: #C43B1C;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    
+    @media (max-width: 992px) {
+      .kitten-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+      .explorer-layout { grid-template-columns: 1fr; }
+      .explorer-nav-col { position: static; max-height: none; }
+      .explorer-content-panel { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body class="newspaper-body">
+
+  <!-- ==========================================
+       HEADER & NEWSPAPER MASTHEAD
+       ========================================== -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <a href="index.html" class="brand-logo" aria-label="Most Valuable Pets Homepage">
+        <img src="logo.png?v=25" alt="Most Valuable Pets" class="brand-img">
+      </a>
+
+      <!-- Centered Navigation -->
+      <nav class="masthead-nav" aria-label="Main Navigation">
+        <a href="index.html#picks" class="nav-link">BEST PICKS</a>
+        <a href="index.html#dogs" class="nav-link">DOGS</a>
+        <a href="index.html#cats" class="nav-link">CATS</a>
+        <a href="index.html#guides" class="nav-link">GUIDES</a>
+        <a href="index.html#how-we-review" class="nav-link">ABOUT US</a>
+      </nav>
+
+      <!-- Back Action Button -->
+      <div class="masthead-actions">
+        <a href="index.html" class="btn btn-secondary" style="padding: 9px 18px; font-size: 11px;">&larr; BACK TO JOURNAL</a>
+      </div>
+    </div>
+
+    <!-- Newspaper Info Strip -->
+    <div class="newspaper-info-strip">
+      <div class="info-strip-inner">
+        <span class="strip-item">INDEPENDENT REVIEWS. SMARTER PET PICKS.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- ==========================================
+         SCREEN 1: HERO & OVERVIEW
+         ========================================== -->
+    <section class="kitten-hero-section">
+      <!-- Full-Width Hero Image -->
+      <img src="grooming_guide.jpg" alt="Golden Retriever dog and fluffy tabby cat groomed warmly together" class="kitten-hero-banner">
+
+      <div class="kitten-hero-grid">
+        <div>
+          <span class="editorial-label">09. COMPLETE PET GROOMING & COAT CARE GUIDE</span>
+          <h1 class="kitten-hero-title">GROOMING</h1>
+          <div class="kitten-hero-subtitle">Clean, Comfortable & Healthy</div>
+          
+          <p class="kitten-hero-desc" style="margin-bottom: 0;">
+            Grooming is much more than keeping your cat or dog looking clean. A good grooming routine maintains healthy skin and coat, keeps nails and paws comfortable, supports dental and ear hygiene, and gives you an opportunity to notice changes in your pet's body.
+          </p>
+        </div>
+
+        <div class="kitten-intro-box">
+          <h3>BY WE TWO PETS EDITORIAL TEAM</h3>
+          <p>
+            Every pet is different &mdash; breed, coat type, age, lifestyle, and temperament affect grooming frequency.
+          </p>
+          <p>
+            <strong>The Goal:</strong> Keep your pet clean, comfortable, healthy, and confident with regular, gentle care.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 2: INTERACTIVE SPLIT-VIEW EXPLORER
+         ========================================== -->
+    <section class="explorer-section" id="explorer">
+      <div class="editorial-badge-row" style="margin-bottom: 12px;">
+        <span class="badge badge-black">INTERACTIVE GUIDE EXPLORER</span>
+      </div>
+      <h2 class="section-title" style="font-size: 36px; margin-bottom: 8px;">IN THIS GUIDE</h2>
+      <p style="font-size: 16px; color: #444444; max-width: 680px;">
+        Click any chapter on the left to explore bathing methods, brushing routines, ear & eye care, nail maintenance, and safety checklists.
+      </p>
+
+      <div class="explorer-layout">
+        
+        <!-- Left Sticky Navigation -->
+        <aside class="explorer-nav-col">
+          <div class="explorer-nav-header">
+            <span>CHAPTER INDEX</span>
+            <span>10 TOPICS</span>
+          </div>
+          <ul class="explorer-nav-list" role="tablist">
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn active" data-target="topic-1">
+                <span>01 &mdash; Understanding Pet Grooming</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-2">
+                <span>02 &mdash; Bathing & Coat Cleaning</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-3">
+                <span>03 &mdash; Brushing & Coat Maintenance</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-4">
+                <span>04 &mdash; Skin Care & Problems</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-5">
+                <span>05 &mdash; Ear Cleaning & Ear Care</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-6">
+                <span>06 &mdash; Eye & Face Cleaning</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-7">
+                <span>07 &mdash; Dental & Oral Care</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-8">
+                <span>08 &mdash; Nail, Paw & Hygiene Care</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-9">
+                <span>09 &mdash; Grooming Routine & Schedule</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-10">
+                <span>10 &mdash; Products & Safety</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Right Content Panel -->
+        <main class="explorer-content-panel">
+          
+          <!-- TOPIC 1 -->
+          <article id="topic-1" class="panel-section active">
+            <div class="panel-badge">CHAPTER 01 &bull; BASICS</div>
+            <h3 class="panel-title">Understanding Pet Grooming</h3>
+            <div class="panel-subtitle">Clean Pet, Healthy Pet</div>
+            <div class="panel-body">
+              <p>Regular grooming allows you to check your pet from nose to tail. Changes and health abnormalities are often much easier to notice when you regularly handle and groom your pet.</p>
+              
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">WHILE GROOMING, INSPECT:</h4>
+              <ul class="panel-list">
+                <li><strong>Skin & Coat:</strong> Flakes, redness, lumps, or parasites.</li>
+                <li><strong>Eyes & Ears:</strong> Discharge, cloudiness, redness, or odour.</li>
+                <li><strong>Teeth & Gums:</strong> Plaque accumulation, bad breath, or bleeding.</li>
+                <li><strong>Nails & Paws:</strong> Overgrowth, cracked pads, or sensitivity.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>START SLOWLY & REWARD</h5>
+                <p><strong>Touch &rarr; Grooming Tool &rarr; Short Session &rarr; Praise &rarr; Reward.</strong> Avoid forcing a frightened pet through a lengthy grooming session.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 2 -->
+          <article id="topic-2" class="panel-section">
+            <div class="panel-badge">CHAPTER 02 &bull; BATHING</div>
+            <h3 class="panel-title">Bathing & Coat Cleaning</h3>
+            <div class="panel-subtitle">Keeping the Coat Fresh & Comfortable</div>
+            <div class="panel-body">
+              <p>Bathing removes dirt, debris, odours, and outdoor contaminants. However, more bathing is not automatically better.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">DOG BATHING WORKFLOW:</h4>
+              <ul class="panel-list">
+                <li><strong>Before Bath:</strong> Brush out loose fur completely before wetting.</li>
+                <li><strong>During Bath:</strong> Use comfortably warm water and dog-specific shampoo. Avoid getting water/soap in eyes and ears.</li>
+                <li><strong>Rinsing:</strong> Rinse thoroughly until water runs completely clear. Leftover soap causes skin irritation.</li>
+                <li><strong>Drying:</strong> Towel dry gently and keep warm until 100% dry.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>CAT BATHING NOTE</h5>
+                <p>Most healthy cats groom themselves effectively and rarely require routine baths unless they become unusually soiled with toxic/sticky substances.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 3 -->
+          <article id="topic-3" class="panel-section">
+            <div class="panel-badge">CHAPTER 03 &bull; BRUSHING</div>
+            <h3 class="panel-title">Brushing & Coat Maintenance</h3>
+            <div class="panel-subtitle">Healthy Coat, Less Loose Hair</div>
+            <div class="panel-body">
+              <p>Brushing removes shed hair, prevents painful mats, removes debris, and distributes natural protective skin oils evenly.</p>
+
+              <table class="panel-table">
+                <thead>
+                  <tr>
+                    <th>Coat Type</th>
+                    <th>Maintenance Focus</th>
+                    <th>Recommended Tools</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Short Coats</strong></td>
+                    <td>Weekly brushing to remove dead dander and loose fur.</td>
+                    <td>Rubber curry brush, bristle brush, grooming glove.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Double / Long Coats</strong></td>
+                    <td>Daily to 3x weekly brushing behind ears, armpits, and underbelly.</td>
+                    <td>Slicker brush, undercoat rake, wide-tooth metal comb.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="panel-callout">
+                <h5>NEVER CUT TIGHT MATS CLOSE TO SKIN</h5>
+                <p>Mats pull skin upwards into the knot. Cutting mats with scissors often results in severe skin lacerations. Use a detangling spray or visit a professional.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 4 -->
+          <article id="topic-4" class="panel-section">
+            <div class="panel-badge">CHAPTER 04 &bull; DERMATOLOGY</div>
+            <h3 class="panel-title">Skin Care & Common Problems</h3>
+            <div class="panel-subtitle">Look Beneath the Coat</div>
+            <div class="panel-body">
+              <p>A beautiful coat starts with healthy skin. Watch for dryness, redness, hot spots, scabs, and parasites during your regular brushing routine.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">POST-OUTDOOR INSPECTION:</h4>
+              <p>After park walks, woods, or muddy trails, inspect: <strong>Coat &rarr; Skin &rarr; Underbelly &rarr; Paws &rarr; Between Toes</strong> for ticks, foxtails, or thorns.</p>
+            </div>
+          </article>
+
+          <!-- TOPIC 5 -->
+          <article id="topic-5" class="panel-section">
+            <div class="panel-badge">CHAPTER 05 &bull; EAR HYGIENE</div>
+            <h3 class="panel-title">Ear Cleaning & Ear Care</h3>
+            <div class="panel-subtitle">Clean Ears Without Over-Cleaning</div>
+            <div class="panel-body">
+              <p>Healthy ears are pale pink, clean, and free of strong odours. Check weekly, especially for floppy-eared breeds and swimming dogs.</p>
+
+              <ul class="panel-checklist">
+                <li>Use only veterinary-formulated ear cleaning solutions.</li>
+                <li>Massage base of ear for 20–30 seconds after applying cleanser.</li>
+                <li>Wipe away loosened debris gently with cotton pad.</li>
+                <li><strong>Never insert cotton swabs / Q-tips deep into the ear canal.</strong></li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- TOPIC 6 -->
+          <article id="topic-6" class="panel-section">
+            <div class="panel-badge">CHAPTER 06 &bull; FACIAL CARE</div>
+            <h3 class="panel-title">Eye & Face Cleaning</h3>
+            <div class="panel-subtitle">Gentle Care Around Sensitive Areas</div>
+            <div class="panel-body">
+              <p>Use a clean, damp cloth to gently wipe away crusting or tear stains from the inner corner outward. Clean facial folds on flat-faced breeds daily to prevent yeast infections.</p>
+            </div>
+          </article>
+
+          <!-- TOPIC 7 -->
+          <article id="topic-7" class="panel-section">
+            <div class="panel-badge">CHAPTER 07 &bull; ORAL HEALTH</div>
+            <h3 class="panel-title">Dental & Oral Care</h3>
+            <div class="panel-subtitle">Clean Teeth & Healthy Gums Matter</div>
+            <div class="panel-body">
+              <p>80% of dogs and 70% of cats show signs of periodontal disease by age 3. Daily or regular brushing preserves oral health and organ longevity.</p>
+
+              <div class="panel-callout">
+                <h5>NEVER USE HUMAN TOOTHPASTE</h5>
+                <p>Human toothpaste contains detergents and xylitol sweeteners that are toxic and irritate pet stomachs. Always use enzymatic pet toothpaste in poultry or malt flavors.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 8 -->
+          <article id="topic-8" class="panel-section">
+            <div class="panel-badge">CHAPTER 08 &bull; PAWS & NAILS</div>
+            <h3 class="panel-title">Nail, Paw & Hygiene Care</h3>
+            <div class="panel-subtitle">Comfort for Everyday Walking</div>
+            <div class="panel-body">
+              <p>Overgrown nails alter paw biomechanics and cause skeletal strain. Trim nail tips every 2–4 weeks or use a silent rotary nail grinder.</p>
+
+              <ul class="panel-checklist">
+                <li>Inspect paw pads for cuts, cracks, or embedded stones.</li>
+                <li>Trim hair between toe pads to prevent slipping on smooth floors.</li>
+                <li>Keep styptic powder handy in case a nail is accidentally cut too close.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- TOPIC 9 -->
+          <article id="topic-9" class="panel-section">
+            <div class="panel-badge">CHAPTER 09 &bull; SCHEDULES</div>
+            <h3 class="panel-title">Grooming Routine & Schedule</h3>
+            <div class="panel-subtitle">Making Grooming a Calm Everyday Habit</div>
+            <div class="panel-body">
+              <table class="panel-table">
+                <thead>
+                  <tr>
+                    <th>Frequency</th>
+                    <th>Tasks</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Daily / Walk Return</strong></td>
+                    <td>Eye wipe, paw inspection, quick brush for long coats, dental chew/brushing.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Weekly</strong></td>
+                    <td>Thorough undercoat brushing, ear check/clean, full skin & lump examination.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Monthly / As Needed</strong></td>
+                    <td>Nail trim, bath (dogs), sanitary hygiene trim, professional groomer visit.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- TOPIC 10 -->
+          <article id="topic-10" class="panel-section">
+            <div class="panel-badge">CHAPTER 10 &bull; SAFETY & PRODUCTS</div>
+            <h3 class="panel-title">Grooming Products & Safety</h3>
+            <div class="panel-subtitle">Using the Right Tools & When to See a Professional</div>
+            <div class="panel-body">
+              <p>Choose high-quality, ergonomic grooming tools suited specifically to your pet's coat length and species.</p>
+
+              <div class="panel-callout">
+                <h5>WHEN TO CHOOSE A VET INSTEAD OF A GROOMER</h5>
+                <p>Contact a veterinarian for sudden alopecia, open hot spots, ear infections with pungent discharge, persistent bleeding gums, or suspicious skin masses.</p>
+              </div>
+            </div>
+          </article>
+
+        </main>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-rule"></div>
+    <div class="page-container footer-content">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand-logo">
+          <img src="logo.png?v=25" alt="Most Valuable Pets" class="footer-brand-img">
+        </a>
+        <p class="footer-bio">Empirical pet testing, veterinary consultation, and transparent reviews.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">GUIDES & REVIEWS</h4>
+        <ul class="footer-link-list">
+          <li><a href="grooming-guide.html">Cat & Dog Grooming Guide</a></li>
+          <li><a href="puppy-care.html">Puppy Care Guide</a></li>
+          <li><a href="kitten-care.html">Kitten Care Guide</a></li>
+          <li><a href="senior-dog-nutrition.html">Senior Dog Nutrition</a></li>
+          <li><a href="dog-bed-size.html">Dog Bed Sizing</a></li>
+        </ul>
+      </div>
+      <div class="footer-stamp-col">
+        <div class="vintage-paw-stamp">
+          <svg width="110" height="110" viewBox="0 0 140 140">
+            <circle cx="70" cy="70" r="64" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="5 3"/>
+            <circle cx="70" cy="70" r="58" fill="none" stroke="#111111" stroke-width="1.5"/>
+            <path id="stamp-arc-top" d="M 22,70 A 48,48 0 1,1 118,70" fill="none" />
+            <path id="stamp-arc-bot" d="M 118,70 A 48,48 0 1,1 22,70" fill="none" />
+            <text font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.8" fill="#111111">
+              <textPath href="#stamp-arc-top" startOffset="50%" text-anchor="middle">MOST VALUABLE PETS</textPath>
+            </text>
+            <text font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.8" fill="#111111">
+              <textPath href="#stamp-arc-bot" startOffset="50%" text-anchor="middle">HAPPIER PETS</textPath>
+            </text>
+            <g transform="translate(52, 54)">
+              <ellipse cx="18" cy="22" rx="10" ry="8" fill="#111111" />
+              <ellipse cx="6" cy="11" rx="4" ry="5.5" fill="#111111" transform="rotate(-15 6 11)" />
+              <ellipse cx="14" cy="7" rx="4" ry="6" fill="#111111" />
+              <ellipse cx="22" cy="7" rx="4" ry="6" fill="#111111" />
+              <ellipse cx="30" cy="11" rx="4" ry="5.5" fill="#111111" transform="rotate(15 30 11)" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="page-container footer-bottom">
+      <div class="affiliate-disclosure-box">
+        Independent testing supported by affiliate links. If you purchase through our links, we may earn an editorial commission at no extra cost to you.
+      </div>
+      <div class="copyright-row">
+        <span>&copy; 2026 Most Valuable Pets &bull; All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching for interactive split-view explorer
+    const tabButtons = document.querySelectorAll('.explorer-tab-btn');
+    const panelSections = document.querySelectorAll('.panel-section');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        
+        tabButtons.forEach(b => b.classList.remove('active'));
+        panelSections.forEach(s => s.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
