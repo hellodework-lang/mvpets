@@ -4,7 +4,7 @@
      - Buttons: Orange-red background (#C43B1C) with white text, or orange-red border.
      - Border Lines & Dividers: Orange-red (#C43B1C).
      - Text Colors: Original black & white / dark typography (black #111111, charcoal #333333, muted #555555/666666).
-     - Theme Base: Clean Black & White / Newsprint White (#eaeaea).
+     - Theme Base: Clean Black & White / Newsprint White (#dddddd).
    ========================================================================== */
 
 /* Reset & Box Sizing */
@@ -16,11 +16,11 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #eaeaea;
+  background-color: #dddddd;
 }
 
 body.newspaper-body {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   color: #111111;
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.55;
@@ -92,27 +92,27 @@ h1, h2, h3, .serif-font {
 /* Primary Button: Solid Orange-Red */
 .btn-primary {
   background-color: #C43B1C;
-  color: #eaeaea;
+  color: #dddddd;
   border: 1.5px solid #C43B1C;
 }
 
 .btn-primary:hover {
   background-color: #A92F17;
   border-color: #A92F17;
-  color: #eaeaea;
+  color: #dddddd;
   transform: translateY(-1px);
 }
 
 /* Secondary Button: Orange-Red Border */
 .btn-secondary {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   color: #111111;
   border: 1.5px solid #C43B1C;
 }
 
 .btn-secondary:hover {
   background-color: #C43B1C;
-  color: #eaeaea;
+  color: #dddddd;
   transform: translateY(-1px);
 }
 
@@ -136,12 +136,12 @@ h1, h2, h3, .serif-font {
 
 .badge-orange {
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   border: 1px solid #C43B1C;
 }
 
 .badge-black {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   color: #111111;
   border: 1px solid #C43B1C;
 }
@@ -165,7 +165,7 @@ h1, h2, h3, .serif-font {
    1. HEADER & MASTHEAD (BORDER IN ORANGE-RED)
    ========================================================================== */
 .masthead {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border-bottom: 2px solid #C43B1C;
   width: 100%;
 }
@@ -263,7 +263,7 @@ h1, h2, h3, .serif-font {
 .newspaper-info-strip {
   border-top: 1px solid #C43B1C;
   border-bottom: 1px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   padding: 7px 24px;
 }
 
@@ -310,7 +310,7 @@ h1, h2, h3, .serif-font {
 .editorial-label {
   display: inline-block;
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 10px;
   font-weight: 800;
@@ -363,7 +363,7 @@ h1, h2, h3, .serif-font {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  border: 2px solid #eaeaea;
+  border: 2px solid #dddddd;
   object-fit: cover;
   margin-left: -10px;
   filter: none;
@@ -395,7 +395,7 @@ h1, h2, h3, .serif-font {
 .photo-frame {
   position: relative;
   border: 2px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.15);
   overflow: hidden;
 }
@@ -421,7 +421,7 @@ h1, h2, h3, .serif-font {
   position: absolute;
   bottom: -24px;
   right: -16px;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   padding: 22px 26px;
   box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
@@ -443,7 +443,7 @@ h1, h2, h3, .serif-font {
   justify-content: center;
   color: #111111;
   transform: rotate(-14deg);
-  background-color: #eaeaea;
+  background-color: #dddddd;
   line-height: 1.15;
   box-shadow: 3px 4px 0px rgba(0, 0, 0, 0.12);
   z-index: 5;
@@ -574,7 +574,7 @@ h1, h2, h3, .serif-font {
 }
 
 .product-card {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 1.5px solid #C43B1C;
   padding: 22px;
   display: flex;
@@ -603,7 +603,7 @@ h1, h2, h3, .serif-font {
 
 .card-img-wrapper {
   position: relative;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 1px solid #C43B1C;
   padding: 16px;
   margin: 10px 0 16px;
@@ -625,7 +625,7 @@ h1, h2, h3, .serif-font {
   bottom: -10px;
   right: 12px;
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -704,7 +704,7 @@ h1, h2, h3, .serif-font {
 
 /* Tall Editorial Score Panel (Orange-Red Borders) */
 .score-panel-tall {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   display: flex;
   flex-direction: column;
@@ -713,14 +713,14 @@ h1, h2, h3, .serif-font {
 
 .score-panel-header {
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   padding: 16px 20px;
   text-align: center;
   border-bottom: 2px solid #C43B1C;
 }
 
 .score-panel-header h3 {
-  color: #eaeaea;
+  color: #dddddd;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -810,7 +810,7 @@ h1, h2, h3, .serif-font {
 .table-responsive-wrapper {
   overflow-x: auto;
   border: 2px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   box-shadow: 5px 5px 0px rgba(196, 59, 28, 0.12);
 }
 
@@ -822,7 +822,7 @@ h1, h2, h3, .serif-font {
 
 .newspaper-table thead tr {
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   border-bottom: 2px solid #C43B1C;
 }
 
@@ -846,7 +846,7 @@ h1, h2, h3, .serif-font {
 }
 
 .newspaper-table tbody tr:hover {
-  background-color: #eaeaea;
+  background-color: #dddddd;
 }
 
 .newspaper-table tbody tr:last-child {
@@ -874,7 +874,7 @@ h1, h2, h3, .serif-font {
   height: 54px;
   object-fit: cover;
   border: 1.5px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   flex-shrink: 0;
   filter: none;
 }
@@ -942,7 +942,7 @@ h1, h2, h3, .serif-font {
 
 /* Left: How We Review */
 .how-we-review-col {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   padding: 36px 32px;
   display: flex;
@@ -977,7 +977,7 @@ h1, h2, h3, .serif-font {
   width: 40px;
   height: 40px;
   border: 1.5px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1011,7 +1011,7 @@ h1, h2, h3, .serif-font {
 }
 
 .finder-box {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   padding: 36px 32px;
   display: flex;
@@ -1029,7 +1029,7 @@ h1, h2, h3, .serif-font {
 .finder-tag {
   display: inline-block;
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 9px;
   font-weight: 800;
@@ -1067,7 +1067,7 @@ h1, h2, h3, .serif-font {
   width: 100%;
   padding: 10px 12px;
   border: 1.5px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   font-family: 'Inter', sans-serif;
   font-size: 13px;
   color: #111111;
@@ -1093,7 +1093,7 @@ h1, h2, h3, .serif-font {
   width: 72px;
   height: 72px;
   border: 1.5px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   overflow: hidden;
   flex-shrink: 0;
 }
@@ -1136,7 +1136,7 @@ h1, h2, h3, .serif-font {
 }
 
 .article-card {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 1.5px solid #C43B1C;
   padding: 16px;
   display: flex;
@@ -1156,7 +1156,7 @@ h1, h2, h3, .serif-font {
   height: 130px;
   overflow: hidden;
   margin-bottom: 12px;
-  background-color: #eaeaea;
+  background-color: #dddddd;
 }
 
 .article-img {
@@ -1229,7 +1229,7 @@ h1, h2, h3, .serif-font {
 }
 
 .newsletter-box {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   padding: 36px 40px;
   display: grid;
@@ -1247,7 +1247,7 @@ h1, h2, h3, .serif-font {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #eaeaea;
+  background-color: #dddddd;
 }
 
 .envelope-circle svg {
@@ -1284,7 +1284,7 @@ h1, h2, h3, .serif-font {
 
 .newsletter-input {
   flex-grow: 1;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 1.5px solid #C43B1C;
   padding: 12px 16px;
   font-family: 'Inter', sans-serif;
@@ -1302,7 +1302,7 @@ h1, h2, h3, .serif-font {
    8. FOOTER (ORANGE-RED DOUBLE BORDER)
    ========================================================================== */
 .site-footer {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border-top: 3px double #C43B1C;
   padding: 48px 0 32px;
   color: #111111;
@@ -1347,7 +1347,7 @@ h1, h2, h3, .serif-font {
   width: 32px;
   height: 32px;
   border: 1.5px solid #C43B1C;
-  background-color: #eaeaea;
+  background-color: #dddddd;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1364,7 +1364,7 @@ h1, h2, h3, .serif-font {
 }
 
 .social-icon:hover svg {
-  stroke: #eaeaea;
+  stroke: #dddddd;
 }
 
 .footer-heading {
@@ -1474,7 +1474,7 @@ h1, h2, h3, .serif-font {
 }
 
 .dialog-content {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 2px solid #C43B1C;
   width: 90%;
   max-width: 780px;
@@ -1486,7 +1486,7 @@ h1, h2, h3, .serif-font {
 
 .dialog-header {
   background-color: #111111;
-  color: #eaeaea;
+  color: #dddddd;
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -1505,7 +1505,7 @@ h1, h2, h3, .serif-font {
 .dialog-close-btn {
   background: transparent;
   border: none;
-  color: #eaeaea;
+  color: #dddddd;
   font-size: 24px;
   line-height: 1;
   cursor: pointer;
@@ -1641,7 +1641,7 @@ h1, h2, h3, .serif-font {
 }
 
 .senior-guide-card {
-  background-color: #eaeaea;
+  background-color: #dddddd;
   border: 1.5px solid #111111;
   padding: 16px 18px;
   display: flex;
