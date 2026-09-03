@@ -4,7 +4,7 @@
      - Buttons: Orange-red background (#C43B1C) with white text, or orange-red border.
      - Border Lines & Dividers: Orange-red (#C43B1C).
      - Text Colors: Original black & white / dark typography (black #111111, charcoal #333333, muted #555555/666666).
-     - Theme Base: Clean Black & White / Newsprint White (#FFFFFF).
+     - Theme Base: Clean Black & White / Newsprint White (#eaeaea).
    ========================================================================== */
 
 /* Reset & Box Sizing */
@@ -91,14 +91,14 @@ h1, h2, h3, .serif-font {
 /* Primary Button: Solid Orange-Red */
 .btn-primary {
   background-color: #C43B1C;
-  color: #FFFFFF;
+  color: #eaeaea;
   border: 1.5px solid #C43B1C;
 }
 
 .btn-primary:hover {
   background-color: #A92F17;
   border-color: #A92F17;
-  color: #FFFFFF;
+  color: #eaeaea;
   transform: translateY(-1px);
 }
 
@@ -111,7 +111,7 @@ h1, h2, h3, .serif-font {
 
 .btn-secondary:hover {
   background-color: #C43B1C;
-  color: #FFFFFF;
+  color: #eaeaea;
   transform: translateY(-1px);
 }
 
@@ -135,7 +135,7 @@ h1, h2, h3, .serif-font {
 
 .badge-orange {
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   border: 1px solid #C43B1C;
 }
 
@@ -309,7 +309,7 @@ h1, h2, h3, .serif-font {
 .editorial-label {
   display: inline-block;
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 10px;
   font-weight: 800;
@@ -624,7 +624,7 @@ h1, h2, h3, .serif-font {
   bottom: -10px;
   right: 12px;
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -712,14 +712,14 @@ h1, h2, h3, .serif-font {
 
 .score-panel-header {
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 16px 20px;
   text-align: center;
   border-bottom: 2px solid #C43B1C;
 }
 
 .score-panel-header h3 {
-  color: #FFFFFF;
+  color: #eaeaea;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
   font-weight: 800;
@@ -821,7 +821,7 @@ h1, h2, h3, .serif-font {
 
 .newspaper-table thead tr {
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   border-bottom: 2px solid #C43B1C;
 }
 
@@ -1028,7 +1028,7 @@ h1, h2, h3, .serif-font {
 .finder-tag {
   display: inline-block;
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   font-family: 'Space Grotesk', sans-serif;
   font-size: 9px;
   font-weight: 800;
@@ -1363,7 +1363,7 @@ h1, h2, h3, .serif-font {
 }
 
 .social-icon:hover svg {
-  stroke: #FFFFFF;
+  stroke: #eaeaea;
 }
 
 .footer-heading {
@@ -1485,7 +1485,7 @@ h1, h2, h3, .serif-font {
 
 .dialog-header {
   background-color: #111111;
-  color: #FFFFFF;
+  color: #eaeaea;
   padding: 12px 20px;
   display: flex;
   align-items: center;
@@ -1504,7 +1504,7 @@ h1, h2, h3, .serif-font {
 .dialog-close-btn {
   background: transparent;
   border: none;
-  color: #FFFFFF;
+  color: #eaeaea;
   font-size: 24px;
   line-height: 1;
   cursor: pointer;
