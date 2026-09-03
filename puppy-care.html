@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puppy Care Guide — Everything You Need to Know | Most Valuable Pets</title>
+  <meta name="description" content="A comprehensive, practical guide to raising a happy, healthy puppy from health, veterinary care, feeding routines, potty training to behaviour and socialisation.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,600;1,700&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=45">
+  <style>
+    /* Hero Section - Screen 1 */
+    .kitten-hero-section {
+      padding: 40px 0 54px;
+      border-bottom: 2px solid #C43B1C;
+    }
+    .kitten-hero-banner {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      display: block;
+      border: 2px solid #C43B1C;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.15);
+      filter: none;
+      margin-bottom: 36px;
+    }
+    .kitten-hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .kitten-hero-title {
+      font-size: 52px;
+      font-weight: 900;
+      line-height: 1.05;
+      color: #111111;
+      margin: 12px 0 8px;
+    }
+    .kitten-hero-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 26px;
+      font-style: italic;
+      color: #C43B1C;
+      margin-bottom: 18px;
+    }
+    .kitten-hero-desc {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #333333;
+      margin-bottom: 24px;
+    }
+    .kitten-intro-box {
+      background-color: #dddddd;
+      border: 2px solid #111111;
+      padding: 32px;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
+    }
+    .kitten-intro-box h3 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #C43B1C;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .kitten-intro-box p {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #222222;
+      margin-bottom: 14px;
+    }
+
+    /* Screen 2: Interactive Split-View Explorer */
+    .explorer-section {
+      padding: 64px 0 80px;
+    }
+    .explorer-layout {
+      display: grid;
+      grid-template-columns: 340px 1fr;
+      gap: 40px;
+      margin-top: 40px;
+      align-items: start;
+    }
+    
+    /* Left Navigation Sidebar */
+    .explorer-nav-col {
+      position: sticky;
+      top: 24px;
+      background-color: #dddddd;
+      border: 2px solid #C43B1C;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.15);
+      overflow: hidden;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+    }
+    .explorer-nav-header {
+      background-color: #111111;
+      color: #dddddd;
+      padding: 16px 20px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+    .explorer-nav-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .explorer-nav-item {
+      border-bottom: 1px solid #cccccc;
+    }
+    .explorer-nav-item:last-child {
+      border-bottom: none;
+    }
+    .explorer-tab-btn {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 14px 18px;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #222222;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background-color 0.15s ease, color 0.15s ease, padding-left 0.15s ease;
+    }
+    .explorer-tab-btn:hover {
+      background-color: #cccccc;
+      color: #C43B1C;
+      padding-left: 22px;
+    }
+    .explorer-tab-btn.active {
+      background-color: #C43B1C;
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .explorer-tab-btn.active .tab-arrow {
+      color: #ffffff;
+      transform: translateX(4px);
+    }
+    .tab-arrow {
+      font-size: 14px;
+      color: #C43B1C;
+      transition: transform 0.15s ease;
+    }
+
+    /* Right Details Display Panel */
+    .explorer-content-panel {
+      background-color: #dddddd;
+      border: 2px solid #C43B1C;
+      padding: 44px 48px;
+      box-shadow: 6px 6px 0px rgba(196, 59, 28, 0.18);
+      min-height: 520px;
+    }
+    .panel-section {
+      display: none;
+    }
+    .panel-section.active {
+      display: block;
+      animation: fadeInPanel 0.2s ease-in-out;
+    }
+    @keyframes fadeInPanel {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .panel-badge {
+      font-family: 'Space Grotesk', monospace;
+      font-size: 12px;
+      font-weight: 800;
+      color: #C43B1C;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .panel-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 32px;
+      font-weight: 900;
+      color: #111111;
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+    .panel-subtitle {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      color: #333333;
+      margin-bottom: 24px;
+      border-bottom: 1.5px solid #C43B1C;
+      padding-bottom: 16px;
+    }
+    .panel-body p {
+      font-size: 15.5px;
+      line-height: 1.75;
+      color: #222222;
+      margin-bottom: 18px;
+    }
+    .panel-callout {
+      background-color: #cccccc;
+      border-left: 4px solid #C43B1C;
+      padding: 18px 22px;
+      margin: 24px 0;
+    }
+    .panel-callout h5 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      color: #C43B1C;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .panel-callout p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #222222;
+      margin-bottom: 0 !important;
+    }
+    .panel-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      border: 1.5px solid #111111;
+    }
+    .panel-table th {
+      background-color: #111111;
+      color: #dddddd;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    .panel-table td {
+      border: 1px solid #cccccc;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #222222;
+    }
+    .panel-table tr:nth-child(even) {
+      background-color: #e5e5e5;
+    }
+    .panel-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .panel-list li {
+      position: relative;
+      padding-left: 24px;
+      margin-bottom: 10px;
+      font-size: 15px;
+      line-height: 1.6;
+      color: #222222;
+    }
+    .panel-list li::before {
+      content: "•";
+      position: absolute;
+      left: 8px;
+      color: #C43B1C;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 1;
+    }
+    .panel-checklist {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 24px;
+    }
+    .panel-checklist li {
+      position: relative;
+      padding-left: 28px;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 1.55;
+      color: #222222;
+    }
+    .panel-checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 4px;
+      color: #C43B1C;
+      font-weight: 800;
+      font-size: 15px;
+    }
+    
+    @media (max-width: 992px) {
+      .kitten-hero-grid { grid-template-columns: 1fr; gap: 28px; }
+      .explorer-layout { grid-template-columns: 1fr; }
+      .explorer-nav-col { position: static; max-height: none; }
+      .explorer-content-panel { padding: 28px 24px; }
+    }
+  </style>
+</head>
+<body class="newspaper-body">
+
+  <!-- ==========================================
+       HEADER & NEWSPAPER MASTHEAD
+       ========================================== -->
+  <header class="masthead">
+    <div class="masthead-top">
+      <a href="index.html" class="brand-logo" aria-label="Most Valuable Pets Homepage">
+        <img src="logo.png?v=25" alt="Most Valuable Pets" class="brand-img">
+      </a>
+
+      <!-- Centered Navigation -->
+      <nav class="masthead-nav" aria-label="Main Navigation">
+        <a href="index.html#picks" class="nav-link">BEST PICKS</a>
+        <a href="index.html#dogs" class="nav-link">DOGS</a>
+        <a href="index.html#cats" class="nav-link">CATS</a>
+        <a href="index.html#guides" class="nav-link">GUIDES</a>
+        <a href="index.html#how-we-review" class="nav-link">ABOUT US</a>
+      </nav>
+    </div>
+
+    <!-- Newspaper Info Strip -->
+    <div class="newspaper-info-strip">
+      <div class="info-strip-inner">
+        <span class="strip-item">INDEPENDENT REVIEWS. SMARTER PET PICKS.</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <!-- ==========================================
+         SCREEN 1: HERO & OVERVIEW
+         ========================================== -->
+    <section class="kitten-hero-section">
+      <!-- Full-Width Hero Image -->
+      <img src="labrador_puppy.jpg" alt="Happy energetic puppy running in grass" class="kitten-hero-banner">
+
+      <div class="kitten-hero-grid">
+        <div>
+          <span class="editorial-label">08. COMPLETE PUPPY CARE & RAISING GUIDE</span>
+          <h1 class="kitten-hero-title">PUPPY</h1>
+          <div class="kitten-hero-subtitle">Growing Up Happy & Healthy</div>
+          
+          <p class="kitten-hero-desc" style="margin-bottom: 0;">
+            Bringing home a puppy is exciting, rewarding, and sometimes a little overwhelming. During the first year of life, puppies grow quickly. Good puppy care is about creating healthy routines, providing appropriate nutrition and veterinary care, teaching good habits, and helping your puppy feel safe and confident.
+          </p>
+        </div>
+
+        <div class="kitten-intro-box">
+          <h3>BY WE TWO PETS EDITORIAL TEAM</h3>
+          <p>
+            During the first year of life, puppies grow quickly. Their bodies develop, their behaviour changes, and they learn how to interact with people, other animals, and the world around them.
+          </p>
+          <p>
+            <strong>We Two Pets</strong> brings everything together in one place &mdash; simple, practical, and easy to understand.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SCREEN 2: INTERACTIVE SPLIT-VIEW EXPLORER
+         ========================================== -->
+    <section class="explorer-section" id="explorer">
+      <div class="editorial-badge-row" style="margin-bottom: 12px;">
+        <span class="badge badge-black">INTERACTIVE GUIDE EXPLORER</span>
+      </div>
+      <h2 class="section-title" style="font-size: 36px; margin-bottom: 8px;">IN THIS GUIDE</h2>
+      <p style="font-size: 16px; color: #444444; max-width: 680px;">
+        Click any chapter on the left to instantly browse comprehensive guidance, veterinarian-backed schedules, feeding plans, and practical checklists.
+      </p>
+
+      <div class="explorer-layout">
+        
+        <!-- Left Sticky Navigation -->
+        <aside class="explorer-nav-col">
+          <div class="explorer-nav-header">
+            <span>CHAPTER INDEX</span>
+            <span>14 TOPICS</span>
+          </div>
+          <ul class="explorer-nav-list" role="tablist">
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn active" data-target="topic-1">
+                <span>01 &mdash; Understanding Your Puppy</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-2">
+                <span>02 &mdash; Health & Vet Care</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-3">
+                <span>03 &mdash; Vaccinations & Prevention</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-4">
+                <span>04 &mdash; Care & Grooming</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-5">
+                <span>05 &mdash; Food, Nutrition & Routines</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-6">
+                <span>06 &mdash; Toilet & Potty Training</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-7">
+                <span>07 &mdash; Training & Behaviour</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-8">
+                <span>08 &mdash; Exercise, Play & Social</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-9">
+                <span>09 &mdash; Sleep & Daily Routine</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-10">
+                <span>10 &mdash; Teething & Chewing</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-11">
+                <span>11 &mdash; Home Safety & Proofing</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-12">
+                <span>12 &mdash; Products & Buying Guide</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-13">
+                <span>13 &mdash; Everyday Puppy Checklist</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+            <li class="explorer-nav-item">
+              <button class="explorer-tab-btn" data-target="topic-14">
+                <span>14 &mdash; Frequently Asked Questions</span>
+                <span class="tab-arrow">&rarr;</span>
+              </button>
+            </li>
+          </ul>
+        </aside>
+
+        <!-- Right Content Panel (Interactive Switcher) -->
+        <main class="explorer-content-panel">
+          
+          <!-- TOPIC 1 -->
+          <article id="topic-1" class="panel-section active">
+            <div class="panel-badge">CHAPTER 01 &bull; DEVELOPMENT</div>
+            <h3 class="panel-title">Understanding Your Puppy</h3>
+            <div class="panel-subtitle">Growing, Learning & Discovering the World</div>
+            <div class="panel-body">
+              <p>Puppyhood is one of the fastest periods of physical and behavioural development in a dog's life. Your puppy is learning every single day &mdash; where to sleep, where to go to the toilet, what they are allowed to chew, how to interact with people, and which behaviours get rewarded.</p>
+              
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">COMMON PUPPY BEHAVIOURS YOU MAY NOTICE:</h4>
+              <ul class="panel-list">
+                <li><strong>Bursts of energy:</strong> Sudden playful "zoomies" followed by deep sleep.</li>
+                <li><strong>Frequent sleeping:</strong> Growing bodies need massive recovery time.</li>
+                <li><strong>Chewing and mouthing:</strong> Exploring their environment and soothing gums.</li>
+                <li><strong>Curiosity:</strong> Investigating every corner, scent, and object.</li>
+                <li><strong>Short attention spans:</strong> Easily distracted during early learning.</li>
+                <li><strong>Fear or uncertainty:</strong> Caution around new or unexpected sounds.</li>
+                <li><strong>Rapid changes in size and appetite:</strong> Steady physical expansion.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>THE IMPORTANT PART</h5>
+                <p><strong>Your puppy is not born knowing your household rules.</strong> Teach the behaviours you want with patience, consistency, positive reinforcement, and realistic expectations. A puppy who feels safe and understands what is expected of them has a stronger foundation for adulthood.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 2 -->
+          <article id="topic-2" class="panel-section">
+            <div class="panel-badge">CHAPTER 02 &bull; VETERINARY CARE</div>
+            <h3 class="panel-title">Puppy Health & Veterinary Care</h3>
+            <div class="panel-subtitle">Building a Healthy Foundation Early</div>
+            <div class="panel-body">
+              <p>Veterinary care should begin early. A veterinarian assesses overall health, growth, weight, teeth, skin, coat, eyes, ears, heart, joints, and skeletal development.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">KEY AREAS TO MONITOR:</h4>
+              <ul class="panel-list">
+                <li><strong>Appetite:</strong> Learn what is normal. Persistent lack of appetite in a young puppy requires prompt attention.</li>
+                <li><strong>Weight & Growth:</strong> Steady, healthy weight gain matching their expected breed size.</li>
+                <li><strong>Digestion:</strong> Stool consistency and frequency. Watch for vomiting or diarrhea.</li>
+                <li><strong>Eyes & Ears:</strong> Check for discharge, redness, odor, or frequent scratching.</li>
+                <li><strong>Skin & Coat:</strong> Look for excessive itching, bald spots, redness, or parasites.</li>
+                <li><strong>Energy:</strong> Look for bright, alert periods between normal long naps.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>WHEN SOMETHING FEELS WRONG</h5>
+                <p>Contact your veterinarian promptly if your puppy develops sudden changes in breathing, drinking, coordination, urination, or displays unusual lethargy. Very young puppies can become unwell quickly.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 3 -->
+          <article id="topic-3" class="panel-section">
+            <div class="panel-badge">CHAPTER 03 &bull; PREVENTIVE CARE</div>
+            <h3 class="panel-title">Vaccinations, Deworming & Prevention</h3>
+            <div class="panel-subtitle">Protection Starts Early</div>
+            <div class="panel-body">
+              <p>Puppies need preventive healthcare because their immune systems are still developing. Your vet creates an individualized preventive care plan.</p>
+
+              <table class="panel-table">
+                <thead>
+                  <tr>
+                    <th>Preventive Care</th>
+                    <th>Why It Matters</th>
+                    <th>Typical Schedule</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Vaccination Series</strong></td>
+                    <td>Protects against Parvovirus, Distemper, Hepatitis, and Rabies.</td>
+                    <td>Core series given every 3–4 weeks from 6–8 weeks up to 16 weeks of age.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Deworming</strong></td>
+                    <td>Treats common intestinal parasites passed from mother or environment.</td>
+                    <td>Regular intervals starting in early puppyhood based on veterinary guidance.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Flea & Tick Prevention</strong></td>
+                    <td>Protects against painful bites, skin allergies, and vector diseases.</td>
+                    <td>Use only products approved for your puppy's specific age and weight.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Heartworm Prevention</strong></td>
+                    <td>Protects against life-threatening mosquito-transmitted parasites.</td>
+                    <td>Commence upon veterinary recommendation based on geographical region.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="panel-callout">
+                <h5>KEEP A PUPPY HEALTH RECORD</h5>
+                <p>Maintain a journal recording vaccination dates, deworming, monthly weight, and vet visits. <strong>Never give human medication to a puppy unless explicitly instructed by a vet.</strong></p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 4 -->
+          <article id="topic-4" class="panel-section">
+            <div class="panel-badge">CHAPTER 04 &bull; HYGIENE & GROOMING</div>
+            <h3 class="panel-title">Care & Grooming</h3>
+            <div class="panel-subtitle">Start Gentle, Start Early</div>
+            <div class="panel-body">
+              <p>Grooming is about much more than appearance &mdash; it helps you monitor skin, coat, paws, ears, and teeth while building lifelong tolerance for gentle handling.</p>
+
+              <ul class="panel-list">
+                <li><strong>Brushing:</strong> Choose a soft brush suitable for their coat type. Keep sessions short and rewarding.</li>
+                <li><strong>Bathing:</strong> Use a gentle puppy-formulated shampoo with comfortably warm water and a non-slip bath mat. Avoid over-bathing.</li>
+                <li><strong>Nail Care:</strong> Handle paws daily. Trim only tiny tips to prevent cutting the quick.</li>
+                <li><strong>Ear Care:</strong> Check for dirt, redness, or wax. Never insert cotton buds deep into ear canals.</li>
+                <li><strong>Dental Care:</strong> Introduce canine enzyme toothpaste gradually. Never use human toothpaste.</li>
+                <li><strong>Paw Checks:</strong> Inspect between pads for cuts, thorns, or irritation after outdoor walks.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>THE PUPPY GROOMING RULE</h5>
+                <p><strong>Short &rarr; Gentle &rarr; Positive &rarr; Reward.</strong> Never turn grooming into a stressful struggle; keep sessions under 3 minutes with generous treats.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 5 -->
+          <article id="topic-5" class="panel-section">
+            <div class="panel-badge">CHAPTER 05 &bull; NUTRITION</div>
+            <h3 class="panel-title">Food, Nutrition & Feeding Routine</h3>
+            <div class="panel-subtitle">Fuel for Healthy Growth</div>
+            <div class="panel-body">
+              <p>Nutrition during puppyhood fuels bones, muscles, brain development, and immune health. Feed complete and balanced growth diets tailored to your puppy's adult size.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">FEEDING FREQUENCY BY AGE:</h4>
+              <ul class="panel-list">
+                <li><strong>8–12 weeks:</strong> 3–4 measured meals per day.</li>
+                <li><strong>3–6 months:</strong> 3 measured meals per day.</li>
+                <li><strong>6–12 months:</strong> Transition gradually to 2 meals per day.</li>
+              </ul>
+
+              <table class="panel-table">
+                <thead>
+                  <tr>
+                    <th>Time</th>
+                    <th>Action</th>
+                    <th>Notes</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>7:00 AM</strong></td>
+                    <td>Breakfast & Water</td>
+                    <td>Offer measured portion after morning potty break.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>11:00 AM</strong></td>
+                    <td>Second Meal</td>
+                    <td>Followed promptly by outside toilet opportunity.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>3:00 PM</strong></td>
+                    <td>Third Meal</td>
+                    <td>Consistent portion; ensure fresh water access.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>7:00 PM</strong></td>
+                    <td>Dinner</td>
+                    <td>Final planned meal allowing digestion before sleep.</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="panel-callout">
+                <h5>FOODS TO KEEP AWAY FROM PUPPIES</h5>
+                <p>Strictly avoid chocolate, grapes, raisins, onions, garlic, xylitol sweeteners, cooked bones, alcohol, and caffeine. Keep household chemicals safely stored.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 6 -->
+          <article id="topic-6" class="panel-section">
+            <div class="panel-badge">CHAPTER 06 &bull; POTTY HABITS</div>
+            <h3 class="panel-title">Toilet & Potty Training</h3>
+            <div class="panel-subtitle">Build the Habit Through Routine</div>
+            <div class="panel-body">
+              <p>Young puppies have small bladders and minimal physical sphincter control. Success comes from regular, predictable opportunities.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">TAKE YOUR PUPPY OUT:</h4>
+              <ul class="panel-checklist">
+                <li>Immediately after waking up</li>
+                <li>10–20 minutes after eating or drinking</li>
+                <li>Immediately after vigorous play or training</li>
+                <li>Immediately upon waking from naps</li>
+                <li>Right before bedtime</li>
+                <li>Whenever you notice sniffing, circling, or restlessness</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>POTTY TRAINING FORMULA</h5>
+                <p><strong>Opportunity &rarr; Correct Location &rarr; Toilet &rarr; Immediate Reward &rarr; Repeat.</strong> If an accident happens, clean thoroughly with enzymatic cleaner without anger. Punishment only creates fear of toileting near humans.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 7 -->
+          <article id="topic-7" class="panel-section">
+            <div class="panel-badge">CHAPTER 07 &bull; LEARNING</div>
+            <h3 class="panel-title">Training & Behaviour</h3>
+            <div class="panel-subtitle">Teach the Dog You Want to Live With</div>
+            <div class="panel-body">
+              <p>Training starts the day your puppy arrives. Keep sessions brief (2–5 minutes), fun, and centered entirely on positive reinforcement.</p>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">FOUNDATIONAL SKILLS:</h4>
+              <ul class="panel-list">
+                <li><strong>Name Recognition:</strong> Saying their name and rewarding eye contact.</li>
+                <li><strong>Recall Foundation (Come):</strong> High-value treats for returning to you happily.</li>
+                <li><strong>Sit & Settle:</strong> Rewarding four paws on the floor and quiet resting.</li>
+                <li><strong>Drop It & Leave It:</strong> Trading items for high-value alternatives without conflict.</li>
+                <li><strong>Loose-Lead Walking:</strong> Rewarding walking by your side without pulling.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>THE GOLDEN RULE OF TRAINING</h5>
+                <p><strong>Show &rarr; Reward &rarr; Repeat.</strong> Catch your puppy doing good things (resting quietly, chewing their toy) and reward them before bad habits develop.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 8 -->
+          <article id="topic-8" class="panel-section">
+            <div class="panel-badge">CHAPTER 08 &bull; SOCIALISATION</div>
+            <h3 class="panel-title">Exercise, Play & Socialisation</h3>
+            <div class="panel-subtitle">Build Confidence, Not Exhaustion</div>
+            <div class="panel-body">
+              <p>Socialisation means helping your puppy build calm, positive associations with the human world &mdash; not overwhelming them with chaotic environments.</p>
+
+              <ul class="panel-list">
+                <li><strong>Sensory Exposure:</strong> Vacuum sounds, umbrella opening, doorbells, lawnmowers, traffic from a safe distance.</li>
+                <li><strong>Different Surfaces:</strong> Grass, gravel, tiles, wood, carpet, wet pavement.</li>
+                <li><strong>Calm Introductions:</strong> Meeting friendly, vaccinated dogs and gentle people at their own pace.</li>
+                <li><strong>Sniff Walks:</strong> Mental stimulation from sniffing is often far more satisfying and calming than strenuous endurance walking.</li>
+              </ul>
+
+              <div class="panel-callout">
+                <h5>QUALITY OVER QUANTITY</h5>
+                <p>Your puppy does not need to greet every dog or stranger. Calmly observing things from a safe distance builds reliable neutral confidence.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- TOPIC 9 -->
+          <article id="topic-9" class="panel-section">
+            <div class="panel-badge">CHAPTER 09 &bull; SLEEP & REST</div>
+            <h3 class="panel-title">Sleep & Daily Routine</h3>
+            <div class="panel-subtitle">Growing Puppies Need 16–20 Hours of Rest</div>
+            <div class="panel-body">
+              <p>Puppies sleep up to 18–20 hours a day. Sleep is crucial for memory consolidation, physical tissue growth, and emotional self-regulation.</p>
+
+              <div class="panel-callout">
+                <h5>OVERTIRED PUPPY SYMPTOMS</h5>
+                <p>When puppies get overtired, they rarely go to sleep on their own &mdash; they become hyperactive, nippy, bitey, and irritable. Scheduled crate or pen naps in a quiet, dark room work wonders.</p>
+              </div>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:16px; margin: 20px 0 10px; color:#111;">SAMPLE DAILY RHYTHM:</h4>
+              <p><strong>Morning:</strong> Wake &rarr; Potty &rarr; Breakfast &rarr; Potty &rarr; 10-min Play &rarr; 2-hour Nap.<br>
+              <strong>Afternoon:</strong> Potty &rarr; Lunch &rarr; Training game &rarr; Potty &rarr; Long Nap.<br>
+              <strong>Evening:</strong> Potty &rarr; Dinner &rarr; Family cuddle &rarr; Potty &rarr; Bedtime.</p>
+            </div>
+          </article>
+
+          <!-- TOPIC 10 -->
+          <article id="topic-10" class="panel-section">
+            <div class="panel-badge">CHAPTER 10 &bull; TEETHING</div>
+            <h3 class="panel-title">Teething & Chewing</h3>
+            <div class="panel-subtitle">Redirecting Natural Exploration</div>
+            <div class="panel-body">
+              <p>Between 3 to 6 months, puppies lose 28 baby teeth and grow 42 adult teeth. Chewing relieves inflamed gum pressure and releases calming endorphins.</p>
+
+              <ul class="panel-list">
+                <li><strong>Provide Variety:</strong> Natural rubber toys, textured nylon bones, chilled teething rings.</li>
+                <li><strong>Cold Relief:</strong> Damp frozen washcloths or frozen carrot chunks soothe aching gums.</li>
+                <li><strong>Calm Redirection:</strong> Whenever puppy teeth touch skin or furniture, calmly say "no" and swap in an approved chew toy immediately.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- TOPIC 11 -->
+          <article id="topic-11" class="panel-section">
+            <div class="panel-badge">CHAPTER 11 &bull; SAFETY</div>
+            <h3 class="panel-title">Home Safety & Puppy-Proofing</h3>
+            <div class="panel-subtitle">Viewing Your Living Space from Puppy Height</div>
+            <div class="panel-body">
+              <p>Puppies explore primarily with their mouths. Prevention through environmental management prevents emergency vet visits.</p>
+
+              <ul class="panel-checklist">
+                <li>Tuck away or protect all electrical cables and power strips.</li>
+                <li>Remove toxic houseplants (Lilies, Sago Palm, Philodendrons).</li>
+                <li>Secure cleaning detergents, medicines, and trash bins with tight lids.</li>
+                <li>Keep shoes, socks, children's toys, and small swallowable items off floors.</li>
+                <li>Install baby gates to block staircases and open balconies.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- TOPIC 12 -->
+          <article id="topic-12" class="panel-section">
+            <div class="panel-badge">CHAPTER 12 &bull; GEAR</div>
+            <h3 class="panel-title">Products & Buying Guide</h3>
+            <div class="panel-subtitle">Buy for Safety, Fit & Everyday Utility</div>
+            <div class="panel-body">
+              <p>Focus on essential, durable items rather than accumulating excessive novelties.</p>
+
+              <table class="panel-table">
+                <thead>
+                  <tr>
+                    <th>Essential Product</th>
+                    <th>Selection Criteria</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Puppy Growth Diet</strong></td>
+                    <td>Complete & balanced AAFCO certified growth formula.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Y-Shaped Harness & Lead</strong></td>
+                    <td>Ergonomic shoulder clearance; avoid restrictive walking gear.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Orthopedic / Bolster Bed</strong></td>
+                    <td>Washable cover with supportive medical foam base.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Rubber KONG & Chew Toys</strong></td>
+                    <td>Durable, non-toxic rubber sized appropriately to avoid choking.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Enzymatic Cleaner</strong></td>
+                    <td>Completely eliminates urine odor molecules so puppies don't re-mark.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+
+          <!-- TOPIC 13 -->
+          <article id="topic-13" class="panel-section">
+            <div class="panel-badge">CHAPTER 13 &bull; CHECKLISTS</div>
+            <h3 class="panel-title">Everyday Puppy Checklist</h3>
+            <div class="panel-subtitle">Daily, Weekly & Periodic Routines</div>
+            <div class="panel-body">
+              <h4 style="font-family:'Space Grotesk'; font-size:15px; margin-bottom:10px; color:#111;">DAILY CHECKLIST:</h4>
+              <ul class="panel-checklist">
+                <li>Fresh drinking water in clean stainless steel bowl</li>
+                <li>Measured growth meals given on regular schedule</li>
+                <li>Regular potty breaks after naps, meals, and play</li>
+                <li>Two short 5-minute positive training sessions</li>
+                <li>16+ hours of restful sleep in quiet area</li>
+              </ul>
+
+              <h4 style="font-family:'Space Grotesk'; font-size:15px; margin: 20px 0 10px; color:#111;">WEEKLY CHECKLIST:</h4>
+              <ul class="panel-checklist">
+                <li>Full coat brushing & skin inspection</li>
+                <li>Check ears for odour, wax, or redness</li>
+                <li>Paw handling & nail tip maintenance</li>
+                <li>Wash bedding & disinfect food bowls</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- TOPIC 14 -->
+          <article id="topic-14" class="panel-section">
+            <div class="panel-badge">CHAPTER 14 &bull; FAQ</div>
+            <h3 class="panel-title">Frequently Asked Questions</h3>
+            <div class="panel-subtitle">Common Questions From New Pet Parents</div>
+            <div class="panel-body">
+              <div style="margin-bottom: 20px;">
+                <strong style="font-size: 16px; color: #111;">Why does my puppy bite my hands so much?</strong>
+                <p style="margin-top: 6px;">Puppies explore the world with their mouths and use biting during littermate play. When excited or overtired, this intensifies. Immediately redirect to a chew toy and enforce quiet nap times.</p>
+              </div>
+
+              <div style="margin-bottom: 20px;">
+                <strong style="font-size: 16px; color: #111;">How much exercise does my puppy really need?</strong>
+                <p style="margin-top: 6px;">A standard rule of thumb is 5 minutes of structured exercise per month of age up to twice daily. Free play on soft grass is preferred over long forced sidewalk walks.</p>
+              </div>
+
+              <div style="margin-bottom: 20px;">
+                <strong style="font-size: 16px; color: #111;">When can my puppy meet other neighborhood dogs?</strong>
+                <p style="margin-top: 6px;">Only after completing their core vaccination series (typically around 16 weeks). Until then, socialize in controlled environments with known, fully vaccinated, gentle adult dogs.</p>
+              </div>
+            </div>
+          </article>
+
+        </main>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="site-footer">
+    <div class="footer-top-rule"></div>
+    <div class="page-container footer-content">
+      <div class="footer-brand-col">
+        <a href="index.html" class="brand-logo">
+          <img src="logo.png?v=25" alt="Most Valuable Pets" class="footer-brand-img">
+        </a>
+        <p class="footer-bio">Empirical pet testing, veterinary consultation, and transparent reviews.</p>
+      </div>
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">GUIDES & REVIEWS</h4>
+        <ul class="footer-link-list">
+          <li><a href="puppy-care.html">Puppy Care Guide</a></li>
+          <li><a href="kitten-care.html">Kitten Care Guide</a></li>
+          <li><a href="senior-dog-nutrition.html">Senior Dog Nutrition</a></li>
+          <li><a href="dog-bed-size.html">Dog Bed Sizing</a></li>
+          <li><a href="cat-water-fountain.html">Cat Water Fountains</a></li>
+        </ul>
+      </div>
+      <div class="footer-stamp-col">
+        <div class="vintage-paw-stamp">
+          <svg width="110" height="110" viewBox="0 0 140 140">
+            <circle cx="70" cy="70" r="64" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="5 3"/>
+            <circle cx="70" cy="70" r="58" fill="none" stroke="#111111" stroke-width="1.5"/>
+            <path id="stamp-arc-top" d="M 22,70 A 48,48 0 1,1 118,70" fill="none" />
+            <path id="stamp-arc-bot" d="M 118,70 A 48,48 0 1,1 22,70" fill="none" />
+            <text font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.8" fill="#111111">
+              <textPath href="#stamp-arc-top" startOffset="50%" text-anchor="middle">MOST VALUABLE PETS</textPath>
+            </text>
+            <text font-family="'Space Grotesk', sans-serif" font-size="8.5" font-weight="700" letter-spacing="1.8" fill="#111111">
+              <textPath href="#stamp-arc-bot" startOffset="50%" text-anchor="middle">HAPPIER PETS</textPath>
+            </text>
+            <g transform="translate(52, 54)">
+              <ellipse cx="18" cy="22" rx="10" ry="8" fill="#111111" />
+              <ellipse cx="6" cy="11" rx="4" ry="5.5" fill="#111111" transform="rotate(-15 6 11)" />
+              <ellipse cx="14" cy="7" rx="4" ry="6" fill="#111111" />
+              <ellipse cx="22" cy="7" rx="4" ry="6" fill="#111111" />
+              <ellipse cx="30" cy="11" rx="4" ry="5.5" fill="#111111" transform="rotate(15 30 11)" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="page-container footer-bottom">
+      <div class="affiliate-disclosure-box">
+        Independent testing supported by affiliate links. If you purchase through our links, we may earn an editorial commission at no extra cost to you.
+      </div>
+      <div class="copyright-row">
+        <span>&copy; 2026 Most Valuable Pets &bull; All Rights Reserved</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Tab switching for interactive split-view explorer
+    const tabButtons = document.querySelectorAll('.explorer-tab-btn');
+    const panelSections = document.querySelectorAll('.panel-section');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetId = btn.getAttribute('data-target');
+        
+        tabButtons.forEach(b => b.classList.remove('active'));
+        panelSections.forEach(s => s.classList.remove('active'));
+
+        btn.classList.add('active');
+        const targetPanel = document.getElementById(targetId);
+        if (targetPanel) {
+          targetPanel.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
